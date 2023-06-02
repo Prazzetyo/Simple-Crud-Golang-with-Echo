@@ -41,6 +41,8 @@ func CheckLogin(c echo.Context) error {
 	}
 
 	return c.JSON(http.StatusOK, echo.Map{
+		"message": "Berhasil Login",
+		"status_code": http.StatusOK,
 		"token": t,
 	})
 }
